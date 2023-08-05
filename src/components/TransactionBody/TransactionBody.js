@@ -1,13 +1,14 @@
+import { Value, Row } from "./TransactionBody.styled";
 
 export function TransactionBody({ transactions }) {
     return (
         <tbody>
             {transactions.map(({ id, type, amount, currency }) => (
-                <tr key={id}>
-                    <td>{type}</td>
-                    <td>{amount}</td>
-                    <td>{currency}</td>
-                </tr>
+                <Row key={id}>
+                    <Value>{type}</Value>
+                    <Value>{amount}</Value>
+                    <Value>{currency}</Value>
+                </Row>
             ))}
         </tbody>
     );

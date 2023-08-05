@@ -1,3 +1,5 @@
+import { TitleText } from "./TransactionHead.styled";
+
 export function TransactionHead({ transactions }) {
     
     const table = Object.keys(transactions[0]).map(obj => {
@@ -5,7 +7,7 @@ export function TransactionHead({ transactions }) {
             if (obj === "id") {
                 return null;
             }
-           return <th key={obj}>{obj}</th>
+           return <TitleText key={obj}>{obj}</TitleText>
     });
     return (
         <thead>

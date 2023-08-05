@@ -1,13 +1,14 @@
 import friends from './friends.json'
 import { FriendListItem } from "components/FriendListItem/FriendListItem";
+import { List, ListItem } from './FriendList.styled';
 
 export function FriendList() {
     return (
-        <ul>
+        <List>
             {friends.map(friend =>
-                <li key={friend.id}>
+                <ListItem key={friend.id}>
                     <FriendListItem friend={friend} />
-                </li>)}
-        </ul>
+                </ListItem>)}
+        </List>
     );
 }
