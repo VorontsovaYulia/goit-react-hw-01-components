@@ -1,5 +1,7 @@
-export function Title({title}) {
+import { TitleList } from "./Title.styled";
+
+export function Title({ title }) {
     return (
-        <h2>{title}</h2>
+        <TitleList>{title}</TitleList>
     );
 }

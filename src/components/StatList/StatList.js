@@ -1,14 +1,16 @@
-export function StatList({data}) {
+import { List, ListItems } from "./StatList.styled";
+
+export function StatList({ data }) {
     const stats = data.map(({ id, label, percentage }) =>
-    <li key={id}>
+    <ListItems key={id}>
             <span>{label}</span>
             <span>{percentage}%</span>
-    </li>
+    </ListItems>
     )
     
     return (
-        <ul>
+        <List>
             {stats}
-        </ul>
+        </List>
     );
 }

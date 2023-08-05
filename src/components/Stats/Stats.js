@@ -1,18 +1,20 @@
+import { List, ListItems, Span } from "./Stats.styled";
+
 export function Stats({ stats: { followers, views, likes } }) {
     return (
-        <ul>
-            <li>
-                <span className="label">Followers</span>
-                <span className="quantity">{followers}</span>
-            </li>
-            <li>
-                <span className="label">Views</span>
-                <span className="quantity">{views}</span>
-            </li>
-            <li>
-                <span className="label">Likes</span>
-                <span className="quantity">{likes}</span>
-            </li>
-        </ul>
+        <List>
+            <ListItems>
+                <span>Followers</span>
+                <Span>{followers}</Span>
+            </ListItems>
+            <ListItems>
+                <span>Views</span>
+                <Span>{views}</Span>
+            </ListItems>
+            <ListItems>
+                <span>Likes</span>
+                <Span>{likes}</Span>
+            </ListItems>
+        </List>
     );
 }

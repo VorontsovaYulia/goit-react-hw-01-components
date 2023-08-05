@@ -1,14 +1,15 @@
+import { Wrapper, Image } from "./Description.styled";
+
 export function Description({ user: { avatar, username, tag, location } }) {
     return (
-        <div>
-            <img
+        <Wrapper>
+            <Image
                 src={avatar}
                 alt={username}
-                className="avatar"
             />
-            <p className="name">{username}</p>
-            <p className="tag">{tag}</p>
-            <p className="location">{location}</p>
-        </div>
+            <p><b>{username}</b></p>
+            <p>{tag}</p>
+            <p>{location}</p>
+        </Wrapper>
     );
 }
