@@ -7,7 +7,7 @@ export const List = styled.ul`
     gap: 10px;
     width: 240px;
     margin: 50px auto;
-`
+`;
 
 export const ListItem = styled.li`
     display: flex;
@@ -19,4 +19,15 @@ export const ListItem = styled.li`
     padding: 10px 16px;
     box-shadow: 0 3px 3px grey;
     background-color: white;
-`
+`;
+
+export const Circle = styled.span`
+    background: ${props => props.children ? 'green' : 'red'};
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+`;
+
+export const Text = styled.p`
+    font-weight: 700;
+`;
