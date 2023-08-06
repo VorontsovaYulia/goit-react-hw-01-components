@@ -1,9 +1,9 @@
 import { Wrapper, TitleList, List, ListItems } from './Statistics.styled';
 
-export function Statistics({data, title=null}) {
+export function Statistics({data, title}) {
     return (
         <Wrapper>
-            <TitleList>{title}</TitleList>
+            {title && <TitleList>{title}</TitleList>}
             <List>
                 {data.map(({ id, label, percentage }) =>
                     

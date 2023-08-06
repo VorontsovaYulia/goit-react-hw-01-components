@@ -1,14 +1,13 @@
-import { List, ListItem, Circle, Text } from './FriendList.styled';
+import { FriendListItem } from './FriendListItem';
+import { List, ListItem } from './FriendList.styled';
 
 export function FriendList({friends}) {
     return (
         <List>
-            {friends.map(({avatar,id, name, isOnline}) =>
-            <ListItem key={id}>
-                <Circle>{isOnline}</Circle>
-                    <img src={avatar} alt={name} width="48" />
-                <Text>{name}</Text>
-            </ListItem>)}
+            {friends.map(friend => (
+            <ListItem key={friend.id}>
+                    <FriendListItem friend={friend} />
+            </ListItem>))}
         </List>
     );
 }
