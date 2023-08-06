@@ -7,9 +7,11 @@ export const List = styled.ul`
 `
 export const ListItems = styled.li`
     width: 48px;
+    height: 50px;
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 `

@@ -6,12 +6,5 @@ export const Value = styled.td`
 `
 
 export const Row = styled.tr`
-        background-color: ${props =>props.className ? '#ff788421' : '#ff788461'}
-    /* :nth-child(odd) {
-        background-color: #ff788461;
-    }
-
-    :nth-child(even) {
-        background-color: #ff788421;
-    } */
+        background-color: ${props =>props.className ? '#ff788421' : '#ff788461'};
 `

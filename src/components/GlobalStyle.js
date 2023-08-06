@@ -8,9 +8,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.28;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(47 44 44 / 18%);
+  background-color: #00000026;
 }
 
 h1,
@@ -29,11 +27,6 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-a {
-  color: currentColor;
-  text-decoration: none;
 }
 
 img {
