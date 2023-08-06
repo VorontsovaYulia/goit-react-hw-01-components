@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const Circle = styled.span`
-    background: green;
+    background: ${props => props.children ? 'green' : 'red'};
     border-radius: 50%;
     height: 16px;
     width: 16px;
